@@ -32,9 +32,10 @@ Comparison of GDP data for Sweden, Mexico, New Zealand, Thailand:
 - Forecasts on various indices across the four countries displayed on a table in a card.
 - Earnings data across the four countries displayed in a table with pagination.
 - Styled to fit across mobile, tabs, laptops and desktop devices.
-- Compatible with default system theme appearance: light and darkmodes.
+- Compatible with default system theme appearances: light and darkmodes.
 
 ## Tech Stack
 
-**Client:** Nextjs/Typescript, TailwindCSS, Tanstack Query(primarily for asynchronous data catching), Axios(for fetching async data)
+**Client:** Nextjs/Typescript, TailwindCSS, Tanstack Query(primarily for asynchronous data catching), Axios(for fetching async data).
 
+**Note:** The flower-like icon shown on the bottom-left side of the screen is a visual representation of catched data on the system. This is courtesy of Tanstack Query, and is only visible in development environments. 
