@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 14, 19, 20;
+  --background-end-rgb: 59, 34, 64;
+  /* --background-end-rgb: 255, 255, 255; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +25,28 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.bulb{
+  margin-top: -2px;
+  width: 92px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: rgb(59 130 246 / .5);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0px 0px 150px 75px rgb(59 130 246 / .5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: -1px;
+  z-index: 1;
+}
+
+.pagination_btn {
+  @apply relative disabled:cursor-not-allowed disabled:scale-95 disabled:bg-cyan-300 inline-flex items-center px-2 py-2 bg-cyan-300 text-sm font-medium text-blue-900 hover:bg-cyan-400 transition duration-500 hover:scale-110;
+}
+
+.td {
+  @apply whitespace-nowrap px-2 md:px-6 py-4
 }

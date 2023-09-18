@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Description
 
-## Getting Started
+An application showcasing a few economic data across 4 countries exposed from the Trading Economics api.
 
-First, run the development server:
+## Installation
+
+##
+
+Install my-project with yarn
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  git clone https://github.com/GabOsaz/trading_economics_app.git
+  cd trading_economics_app
+  yarn
+  yarn run dev
+```
+Install my-project with npm
+
+```bash
+  git clone https://github.com/GabOsaz/trading_economics_app.git
+  cd te_app
+  npm install
+  npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Comparison of GDP data for Sweden, Mexico, New Zealand, Thailand:
 
-## Learn More
+- Full Year GDP Growth data.
+- GDP from Agriculture, Construction, Manufacturing, Mining, Public Administration, Transport, and Utilities.
+- Previous and Latest GDP values from Agriculture, Construction, Manufacturing, Mining, Public Administration, Transport, and Utilities.
+- Forecasts on various indices across the four countries displayed on a table in a card.
+- Earnings data across the four countries displayed in a table with pagination.
+- Styled to fit across mobile, tabs, laptops and desktop devices.
+- Compatible with default system theme appearance: light or darkmode.
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Client:** Nextjs/Typescript, TailwindCSS, Tanstack Query(primarily for asynchronous data catching) Axios(for fetching async data)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
